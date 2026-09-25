@@ -20,10 +20,10 @@
 
   <h2>What data AUTOPOST accesses</h2>
   <ul>
-    <li><strong>YouTube:</strong> when the owner connects a channel, AUTOPOST asks Google for permission to upload videos (<code>youtube.upload</code>) and to read the channel's name and ID (<code>youtube.readonly</code>). It uses these only to upload the videos the owner has queued, set their publish time and cover image, and show which channel is connected.</li>
+    <li><strong>YouTube:</strong> when the owner connects a channel, AUTOPOST asks Google for permission to upload videos (<code>youtube.upload</code>), to read the channel's name and ID (<code>youtube.readonly</code>), and to manage its videos (<code>youtube.force-ssl</code>). It uses these only to upload the videos the owner has queued, set their publish time and cover image, show which channel is connected, and delete a video when the owner deletes that post in AUTOPOST.</li>
     <li><strong>TikTok:</strong> when the owner connects an account, AUTOPOST asks TikTok for permission to read the account's basic profile (<code>user.info.basic</code>, to show which account is connected) and to upload videos to the owner's TikTok inbox as drafts (<code>video.upload</code>). The owner adds the caption and publishes each draft in the TikTok app; AUTOPOST never publishes to TikTok by itself.</li>
     <li><strong>Google Sheets and Google Drive:</strong> the post queue and the media files the owner has shared with the tool.</li>
-    <li><strong>Facebook and Instagram:</strong> the Pages and accounts the owner has set up, in order to publish the owner's posts.</li>
+    <li><strong>Facebook and Instagram:</strong> the Pages and accounts the owner has set up, in order to publish the owner's posts, and to delete a post when the owner deletes it in AUTOPOST.</li>
   </ul>
 
   <h2>How data is stored</h2>
